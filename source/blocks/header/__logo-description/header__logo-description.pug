@@ -1,0 +1,4 @@
+mixin header__logo-description(modifier)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__description";
+  p.header__logo-description&attributes(attributes)!=modifier.description

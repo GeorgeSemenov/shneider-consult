@@ -1,0 +1,4 @@
+mixin header__logo-title(modifier)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h1.header__logo-title&attributes(attributes)!=modifier.title

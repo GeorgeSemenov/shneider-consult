@@ -1,5 +1,16 @@
+include __logo-pic/header__logo-pic.pug
+include __logo-description/header__logo-description.pug
+include __logo-title/header__logo-title.pug
+include __navigation-item/header__navigation-item.pug
+include __navigation/header__navigation.pug
+include __phone-number/header__phone-number.pug
+include __phone-numbers/header__phone-numbers.pug
 include __promotion/header__promotion.pug
 include __logo/header__logo.pug
 include __presentation/header__presentation.pug
 mixin header(modifier)
-  .header&attributes(attributes)
+  if modifier == undefined
+    - modifier = {};
+  header.header&attributes(attributes)
+    +header__presentation(modifier)
+    +header__navigation(modifier)

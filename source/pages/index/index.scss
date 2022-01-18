@@ -2,14 +2,11 @@
 @import "../../styles/allCommonStyles";
 
 /* Стили блоков */
-// @import '../../blocks/navigation/navigation';
-// @import '../../blocks/greetings-screen/greetings-screen';
-// @import '../../blocks/my-person-screen/my-person-screen';
-// @import '../../blocks/skills-and-services-screen/skills-and-services-screen';
-// @import '../../blocks/portfolio-screen/portfolio-screen';
+@import '../../blocks/header/header';
 
 
 body {
+  font-family: 'Open Sans', sans-serif;
   background-color: $white;
   display: flex;
   font-size: 15px;

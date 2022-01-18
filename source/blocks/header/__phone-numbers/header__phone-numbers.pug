@@ -1,0 +1,8 @@
+mixin header__phone-numbers(modifier)
+  if modifier["phones"] == undefined
+    - modifier["phones"] = [{}];
+  ul.header__phone-numbers&attributes(attributes)
+    each phone in modifier.phones
+      if phone["modifier"] == undefined
+        - phone["modifier"] = '';
+      +header__phone-number(phone)(class=phone.modifier)

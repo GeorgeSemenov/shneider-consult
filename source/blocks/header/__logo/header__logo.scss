@@ -1,1 +1,9 @@
-.header__logo {}
+.header__logo {
+  display: grid;
+  grid-template-columns: 102px 200px;
+  grid-template-rows: repeat(2,auto);
+  grid-template-areas:  "pic title"
+                        "pic desc";
+  column-gap: 20px;
+  row-gap: 3px;
+}

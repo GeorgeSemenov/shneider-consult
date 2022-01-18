@@ -1,0 +1,8 @@
+mixin header__navigation-item(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  if modifier["link"] == undefined
+        - modifier["link"] = "#!";    
+  li.header__navigation-item&attributes(attributes)
+    a(href=modifier.link)
+      p!=modifier.text

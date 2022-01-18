@@ -1,9 +1,5 @@
 include ../../blocks/favicon/favicon.pug
-//- include ../../blocks/navigation/navigation.pug
-//- include ../../blocks/greetings-screen/greetings-screen.pug
-//- include ../../blocks/my-person-screen/my-person-screen.pug
-//- include ../../blocks/skills-and-services-screen/skills-and-services-screen.pug
-//- include ../../blocks/portfolio-screen/portfolio-screen.pug
+include ../../blocks/header/header.pug
 doctype html
 html(lang="ru")
   head
@@ -13,5 +9,20 @@ html(lang="ru")
     //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
     +favicon()
   body
+    +header({
+      title: 'НАЗВАНИЕ КОМПАНИИ',
+      description: 'Самая крутая компания!',
+      promotion: 'Распродажа до 15.02.16!',
+      phones: [
+        {
+          number: "+73432525252", 
+          display: "+7 (343) 252-52-52"
+        },
+        {
+          number: "+73432525252", 
+          display: "+7 (343) 252-52-52"
+        }
+      ]
+    })
       //-
         Все иконки были скачаны с ресурса - flaticon.com 

@@ -1,2 +1,4 @@
 mixin header__promotion(modifier)
-  .header__promotion&attributes(attributes)
+  if modifier["promotion"] == undefined
+    - modifier["promotion"] = "empty__promotion";
+  p.header__promotion&attributes(attributes)!=modifier.promotion

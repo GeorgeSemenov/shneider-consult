@@ -1,4 +1,14 @@
+@import '__logo-pic/header__logo-pic';
+@import '__logo-description/header__logo-description';
+@import '__logo-title/header__logo-title';
+@import '__navigation-item/header__navigation-item';
+@import '__navigation/header__navigation';
+@import '__phone-number/header__phone-number';
+@import '__phone-numbers/header__phone-numbers';
 @import '__promotion/header__promotion';
 @import '__logo/header__logo';
 @import '__presentation/header__presentation';
-.header {}
+.header {
+  background:$header-background-color;
+  color: $header-color;
+}
