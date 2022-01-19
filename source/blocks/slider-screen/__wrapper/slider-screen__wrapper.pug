@@ -1,0 +1,8 @@
+mixin slider-screen__wrapper(modifier)
+  if modifier["slides"] == undefined
+    - modifier["slides"] = [{}];
+  .slider-screen__wrapper.swiper-wrapper&attributes(attributes)
+    each slide in modifier.slides
+      if slide["modifier"] == undefined
+        - slide["modifier"] = "";
+      +slider-screen__item(slide)(class=slide.modifier)

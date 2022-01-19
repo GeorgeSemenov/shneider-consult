@@ -1,5 +1,6 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/header/header.pug
+include ../../blocks/slider-screen/slider-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -32,6 +33,17 @@ html(lang="ru")
       ]
     })
     main
-
+      +slider-screen({
+        slides:[
+          {
+            name:'mountan_orig',
+            desc: 'Горы'
+          },
+          {
+            name:'mountan_orig',
+            desc: 'Горы'
+          },
+        ]
+      })
       //-
         Все иконки были скачаны с ресурса - flaticon.com 

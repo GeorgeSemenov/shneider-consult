@@ -1,11 +1,12 @@
 .header__sandwich-ico-container {
-  width: 25px;
-  height: 16px;
+  width: 50px;
+  height: 32px;
   position: relative;
   display: block;
-  margin-bottom: 11px;
   flex-shrink: 0;
   cursor: pointer;
+  top: 30px;
+  right: 20px;
   @media (min-width: $md){
     display: none;
   }

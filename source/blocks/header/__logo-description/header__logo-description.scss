@@ -2,4 +2,7 @@
   grid-area: desc;
   font-size: 15px;
   letter-spacing: 0.3px;
+  @media (max-width: $sm - 1px){
+    display: none;
+  }
 }

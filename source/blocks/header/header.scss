@@ -18,5 +18,11 @@
   padding-top: 45px;
   @media (max-width: $md - 1px){
     padding-top: 20px;
+    height: 120px;
+    overflow: hidden;
+  }
+
+  &_expanded{
+    height: auto;
   }
 }

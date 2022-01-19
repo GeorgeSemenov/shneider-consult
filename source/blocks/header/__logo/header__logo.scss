@@ -8,6 +8,6 @@
   row-gap: 3px;
 
   @media (max-width: $md - 1px){
-    width: 100%;
+    grid-template-columns: 102px 0px;
   }
 }

@@ -7,4 +7,7 @@
   &:last-child{
     margin-bottom:0px;
   }
+  @media (max-width: $md - 1px){
+    padding-left: 0px;
+  }
 }

@@ -1,0 +1,7 @@
+include __item/slider-screen__item.pug
+include __wrapper/slider-screen__wrapper.pug
+mixin slider-screen(modifier)
+  if modifier == undefined
+    - modifier = {};
+  section.slider-screen.swiper-container&attributes(attributes)
+    +slider-screen__wrapper(modifier)

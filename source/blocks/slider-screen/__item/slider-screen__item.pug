@@ -1,0 +1,8 @@
+mixin slider-screen__item(modifier)
+  if modifier["desc"] == undefined
+    - modifier["desc"] = "Горы";
+  if modifier["name"] == undefined
+    - modifier["name"] = "mountan_orig";
+  case modifier.name
+    when "mountan_orig"
+      img.slider-screen__item.swiper-slide(src=require('../../img/mountain_orig.jpg') alt=modifier.desc)&attributes(attributes)

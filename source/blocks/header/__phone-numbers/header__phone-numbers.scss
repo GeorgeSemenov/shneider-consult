@@ -1,3 +1,7 @@
 .header__phone-numbers {
   padding-top: 10px;
+  text-align: center;
+  @media (max-width: $md - 1px){
+    width: 100%;
+  }
 }
