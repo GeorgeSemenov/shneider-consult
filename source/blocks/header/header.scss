@@ -1,3 +1,5 @@
+@import '__sandwich-ico/header__sandwich-ico';
+@import '__sandwich-ico-container/header__sandwich-ico-container';
 @import '__logo-pic/header__logo-pic';
 @import '__logo-description/header__logo-description';
 @import '__logo-title/header__logo-title';
@@ -9,6 +11,12 @@
 @import '__logo/header__logo';
 @import '__presentation/header__presentation';
 .header {
-  background:$header-background-color;
-  color: $header-color;
+  background:$header--BGColor;
+  color: $header--Color;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 45px;
+  @media (max-width: $md - 1px){
+    padding-top: 20px;
+  }
 }

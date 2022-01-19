@@ -1,1 +1,15 @@
-.header__presentation {}
+.header__presentation {
+  width: 100%;
+  padding-bottom: 54px;
+  @media (max-width: $md - 1px){
+    padding-bottom: 20px;
+  }
+
+  .container{
+    justify-content: space-between;
+
+    @media (max-width: $md - 1px){
+      flex-wrap: wrap;
+    }
+  }
+}

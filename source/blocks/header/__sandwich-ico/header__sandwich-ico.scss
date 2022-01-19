@@ -1,0 +1,48 @@
+.header__sandwich-ico {
+  background: $header__sandwich-ico--BGColor;
+  display: block;
+  height: 3px;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  transition: background .5s ease-out;
+  width: 24px;
+  top: 50%;
+
+  &:before,
+  &:after {
+    background: $header__sandwich-ico-after-before--BGColor;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .5s ease-out;
+  }
+
+  &:before {/*первая линия бутерброда*/
+    top: 7px;
+  }
+
+  &:after {/*третья линия бутерброда*/
+    top: -7px;
+  }
+}
+
+.header_expanded{
+  .header__sandwich-ico {
+    background: $transparent;
+
+    &:before,
+    &:after {
+      top: 0px;
+    }
+    &:before {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+}

@@ -1,5 +1,7 @@
 mixin header__presentation(modifier)
   .header__presentation&attributes(attributes)
-    +header__logo(modifier)
-    +header__promotion(modifier)
-    +header__phone-numbers(modifier)
+    .container
+      +header__logo(modifier)
+      +header__sandwich-ico-container(modifier)
+      +header__promotion(modifier)
+      +header__phone-numbers(modifier)

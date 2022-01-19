@@ -1,1 +1,25 @@
-.header__navigation-item {}
+.header__navigation-item {
+  color: $header__navigation-item--color;
+  font-size: 20px;
+  padding-right: 13px;
+  margin-right: 13px;
+  border-right: solid $header__navigation-item--BorderColor 1px;
+  &:last-child{
+    border-right: none;
+  }
+
+  a{
+    cursor: pointer;
+    &::after{
+      content: '';
+      display: block;
+      width: 100%;
+      position: relative;
+      bottom: 1px;
+      border-bottom: 1px solid $transparent;
+    }
+    &:hover::after{
+      border-bottom: 1px solid $header__navigation-item-link--BorderColor;
+    }
+  }
+}

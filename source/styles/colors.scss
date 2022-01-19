@@ -10,5 +10,11 @@ $gray-darkest: #777777;
 
 /* variables with sense */
 /* *********************************************************************** */
-$header-background-color: $gray;
-$header-color: $gray-darkest;
+$header--BGColor: $gray;
+$header--Color: $gray-darkest;
+$header__navigation--BGColor: $gray-darkest;
+$header__navigation-item--color: $white;
+$header__navigation-item--BorderColor: $white;
+$header__navigation-item-link--BorderColor: $white;
+$header__sandwich-ico--BGColor: $gray-darkest;
+$header__sandwich-ico-after-before--BGColor: $gray-darkest;

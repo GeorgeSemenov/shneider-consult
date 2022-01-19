@@ -2,8 +2,9 @@ mixin header__navigation(modifier)
   if modifier["navItems"] == undefined
     - modifier["navItems"] = [{}];
   nav.header__navigation&attributes(attributes)
-    ul
-      each item in modifier.navItems
-        if item["modifier"] == undefined
-          - item["modifier"] = '';
-        +header__navigation-item(item)(class=item.modifier)
+    .container
+      ul
+        each item in modifier.navItems
+          if item["modifier"] == undefined
+            - item["modifier"] = '';
+          +header__navigation-item(item)(class=item.modifier)

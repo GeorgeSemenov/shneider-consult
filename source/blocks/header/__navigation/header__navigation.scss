@@ -1,1 +1,13 @@
-.header__navigation {}
+.header__navigation {
+  width: 100%;
+  background-color: $header__navigation--BGColor;
+  padding-top: 17px;
+  padding-bottom: 20px;
+
+  ul{
+    padding-left: 25px;
+    @include mx(auto);
+    display: flex;
+    justify-content: space-between;
+  }
+}

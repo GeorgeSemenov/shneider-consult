@@ -1,3 +1,5 @@
+include __sandwich-ico/header__sandwich-ico.pug
+include __sandwich-ico-container/header__sandwich-ico-container.pug
 include __logo-pic/header__logo-pic.pug
 include __logo-description/header__logo-description.pug
 include __logo-title/header__logo-title.pug
@@ -12,5 +14,5 @@ mixin header(modifier)
   if modifier == undefined
     - modifier = {};
   header.header&attributes(attributes)
-    +header__presentation(modifier)
-    +header__navigation(modifier)
+      +header__presentation(modifier)
+      +header__navigation(modifier)

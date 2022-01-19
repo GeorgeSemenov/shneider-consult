@@ -6,4 +6,8 @@
                         "pic desc";
   column-gap: 20px;
   row-gap: 3px;
+
+  @media (max-width: $md - 1px){
+    width: 100%;
+  }
 }
