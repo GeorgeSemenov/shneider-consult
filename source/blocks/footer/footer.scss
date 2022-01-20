@@ -1,0 +1,10 @@
+@import '__sign-text/footer__sign-text';
+@import '__sign-link/footer__sign-link';
+@import '__sign/footer__sign';
+@import '__navigation-item/footer__navigation-item';
+@import '__navigation/footer__navigation';
+@import '__rights/footer__rights';
+.footer {
+  background-color: $footer--BGColor;
+  color: $footer--Color;
+}

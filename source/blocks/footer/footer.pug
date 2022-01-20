@@ -1,0 +1,14 @@
+include __sign-text/footer__sign-text.pug
+include __sign-link/footer__sign-link.pug
+include __sign/footer__sign.pug
+include __navigation-item/footer__navigation-item.pug
+include __navigation/footer__navigation.pug
+include __rights/footer__rights.pug
+mixin footer(modifier)
+  if modifier == undefined
+    - modifier = {};
+  footer.footer&attributes(attributes)
+    .container
+      +footer__rights(modifier)
+      +footer__navigation(modifier)
+      +footer__sign(modifier)

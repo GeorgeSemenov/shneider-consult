@@ -1,1 +1,6 @@
-.content-screen__business-description {}
+.content-screen__business-description {
+  width: 255px;
+  @media (max-width: $lg - 1px){
+    width: 100%;
+  }
+}

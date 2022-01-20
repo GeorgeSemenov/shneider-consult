@@ -1,1 +1,12 @@
-.content-screen__paragraph {}
+.content-screen__paragraph {
+  letter-spacing: 0.1px;
+  padding-right: 1px;
+  word-wrap: break-word;
+  margin-bottom: 21px;
+  @media (max-width: $lg - 1px){
+    padding-right: 0px;
+  }
+  &:last-child{
+    margin-bottom:0px;
+  }
+}

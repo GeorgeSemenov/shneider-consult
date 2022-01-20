@@ -1,1 +1,11 @@
-.content-screen__business {}
+.content-screen__business {
+  flex-basis: 267px;
+  flex-shrink: 0;
+  @media (max-width: $lg - 1px){
+    flex-basis: 45%;
+  }
+  @media (max-width: $md - 1px){
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}

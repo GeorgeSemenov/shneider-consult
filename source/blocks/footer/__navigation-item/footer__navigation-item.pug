@@ -1,0 +1,7 @@
+mixin footer__navigation-item(modifier)
+  if modifier["link"] == undefined
+    - modifier["link"] = "#!";
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  li.footer__navigation-item&attributes(attributes)
+    a(href=modifier.link)!=modifier.text

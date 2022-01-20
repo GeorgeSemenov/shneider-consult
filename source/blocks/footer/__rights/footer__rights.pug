@@ -1,0 +1,4 @@
+mixin footer__rights(modifier)
+  if modifier["rights"] == undefined
+    - modifier["rights"] = "empty__rights";
+  p.footer__rights&attributes(attributes)!=modifier.rights

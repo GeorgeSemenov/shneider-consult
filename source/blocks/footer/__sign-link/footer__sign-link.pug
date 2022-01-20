@@ -1,0 +1,6 @@
+mixin footer__sign-link(modifier)
+  if modifier["link"] == undefined
+    - modifier["link"] = "#!";
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  a.footer__sign-link(href=modifier.link)&attributes(attributes)!=modifier.text

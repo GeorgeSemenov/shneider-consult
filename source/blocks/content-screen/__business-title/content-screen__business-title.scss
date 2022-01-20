@@ -1,1 +1,8 @@
-.content-screen__business-title {}
+.content-screen__business-title {
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  margin-bottom: 22px;
+  @media (max-width: $md - 1px){
+    margin-bottom: 15px;
+  }
+}

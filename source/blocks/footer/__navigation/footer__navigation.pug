@@ -1,0 +1,8 @@
+mixin footer__navigation(modifier)
+  if modifier["navItems"] == undefined
+    - modifier["navItems"] = [{}];
+  ul.footer__navigation&attributes(attributes)
+    each navItem in modifier.navItems
+      if navItem["modifier"] == undefined
+        - navItem["modifier"] = "";
+      +footer__navigation-item(navItem)

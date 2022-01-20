@@ -1,7 +1,9 @@
 .content-screen__side-bar {
   flex-basis: 35.7%;
   margin-right: 59px;
+  flex-shrink: 0;
   @media (max-width: $md - 1px){
+    flex-basis: auto;
     margin-right: 0px;
   }
 }

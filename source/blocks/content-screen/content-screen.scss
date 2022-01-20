@@ -12,4 +12,15 @@
 @import '../side-bar/side-bar';
 .content-screen {
   padding-top: 43px;
+  padding-bottom: 43px;
+  .container{
+    flex-wrap: nowrap;
+    @media (max-width: $lg - 1px){
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (max-width: $md - 1px){
+
+    }
+  }
 }
