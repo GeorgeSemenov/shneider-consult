@@ -10,6 +10,7 @@ html{
 body{
   margin:0;
   font-family: 'Open Sans', sans-serif;
+  line-height: 22px;
   background-color: $white;
   font-size: 15px;
   @media (max-width: $md - 1px){

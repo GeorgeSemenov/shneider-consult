@@ -6,3 +6,11 @@ mixin slider-screen__item(modifier)
   case modifier.name
     when "mountan_orig"
       img.slider-screen__item.swiper-slide(src=require('../../img/mountain_orig.jpg') alt=modifier.desc)&attributes(attributes)
+    when "mountan_HA"
+      img.slider-screen__item.swiper-slide(src=require('../../img/mountain_HA.jpg') alt=modifier.desc)&attributes(attributes)
+    when "mountan_HC"
+      img.slider-screen__item.swiper-slide(src=require('../../img/mountain_HC.jpg') alt=modifier.desc)&attributes(attributes)
+    when "mountan_WA"
+      img.slider-screen__item.swiper-slide(src=require('../../img/mountain_WA.jpg') alt=modifier.desc)&attributes(attributes)
+    when "mountan_WC"
+      img.slider-screen__item.swiper-slide(src=require('../../img/mountain_WC.jpg') alt=modifier.desc)&attributes(attributes)
