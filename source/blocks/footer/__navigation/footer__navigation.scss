@@ -1,1 +1,5 @@
-.footer__navigation {}
+.footer__navigation {
+  @media (max-width: $md - 1px){
+    margin-bottom: 20px;
+  }
+}

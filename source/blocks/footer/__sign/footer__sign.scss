@@ -1,1 +1,13 @@
-.footer__sign {}
+.footer__sign {
+  margin-left: auto;
+  width: 213px;
+  padding-right: 6px;
+  @media (max-width: $lg - 1px){
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+  @media (max-width: $md - 1px){
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

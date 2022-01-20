@@ -1,1 +1,24 @@
-.footer__navigation-item {}
+.footer__navigation-item {
+  margin-bottom: 3px;
+  @media (max-width: $md - 1px){
+    text-align: center;
+  }
+  &:last-child{
+    margin-bottom:0px;
+  }
+  a{
+    cursor: pointer;
+    display: inline-block;
+    &::after{
+      content: '';
+      display: block;
+      width: 100%;
+      position: relative;
+      bottom: 1px;
+      border-bottom: 1px solid $transparent;
+    }
+    &:hover::after{
+      border-bottom: 1px solid $footer__navigation-item-link--BorderColor;
+    }
+  }
+}
