@@ -1,2 +1,4 @@
 mixin side-bar__post(modifier)
-  .side-bar__post&attributes(attributes)
+  li.side-bar__post&attributes(attributes)
+    +side-bar__post-title(modifier)
+    +side-bar__post-description(modifier)

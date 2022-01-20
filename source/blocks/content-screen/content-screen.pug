@@ -1,3 +1,4 @@
+include __paragraph/content-screen__paragraph.pug
 include __businesses-section-title/content-screen__businesses-section-title.pug
 include __business-description/content-screen__business-description.pug
 include __business-title/content-screen__business-title.pug
@@ -7,5 +8,11 @@ include __our-businesses-section/content-screen__our-businesses-section.pug
 include __content-description/content-screen__content-description.pug
 include __content-title/content-screen__content-title.pug
 include __content/content-screen__content.pug
+include ../side-bar/side-bar.pug
 mixin content-screen(modifier)
+  if modifier == undefined
+    - modifier = {};
   section.content-screen&attributes(attributes)
+    .container
+      +side-bar(modifier.sideBar)(class= "content-screen__side-bar")
+      +content-screen__content(modifier)

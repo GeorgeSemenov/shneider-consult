@@ -1,1 +1,7 @@
-.content-screen__side-bar {}
+.content-screen__side-bar {
+  flex-basis: 35.7%;
+  margin-right: 59px;
+  @media (max-width: $md - 1px){
+    margin-right: 0px;
+  }
+}

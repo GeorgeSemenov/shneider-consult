@@ -1,1 +1,6 @@
-.side-bar__post {}
+.side-bar__post {
+  margin-bottom: 23px;
+  &:last-child{
+    margin-bottom:0px;
+  }
+}

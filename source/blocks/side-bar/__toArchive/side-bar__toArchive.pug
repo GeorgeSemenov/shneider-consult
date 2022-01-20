@@ -1,0 +1,7 @@
+mixin side-bar__toArchive(modifier)
+  if modifier["linkToArchive"] == undefined
+    - modifier["linkToArchive"] = "#!";
+  if modifier["archive"] == undefined
+    - modifier["toArchiveText"] = "Архив акций";
+  .side-bar__toArchive&attributes(attributes)
+    a(href=modifier.linkToArchive)!=modifier.toArchiveText

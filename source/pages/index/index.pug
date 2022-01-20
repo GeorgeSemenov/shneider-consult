@@ -1,13 +1,13 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/header/header.pug
 include ../../blocks/slider-screen/slider-screen.pug
+include ../../blocks/content-screen/content-screen.pug
 doctype html
 html(lang="ru")
   head
     meta(charset = "utf-8")
     meta(name="viewport", content="initial-scale=1.0, width=device-width")
     title George Semenov portfolio
-    //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
     +favicon()
   body
     +header({
@@ -50,12 +50,48 @@ html(lang="ru")
           {
             name:'mountan_HC',
             desc: 'Горы обрезаны по высоте'
-          },
-          {
-            name:'mountan_HA',
-            desc: 'Горы увеличенны по высоте'
           }
         ]
+      })
+      +content-screen({
+        title:"Компания «Шнайдер Консалт»",
+        description: "Мы эксперты в запуске интернет магазинов",
+        businessesTitle: "Чем мы занимаемся?",
+        businesses:[
+          {
+            title:"Только товары для дома, строительства и ремонта.",
+            description: "Нельзя одинаково хорошо разбираться во всех"
+          },
+          {
+            title:"Строим комплексный маркетинг и продажи.",
+            description: "Мы не делаем просто сайты. Не занимаемся просто"
+          },
+        ],
+        sideBar:{
+          title: "Новости",
+          posts: [
+            {
+              title:"14 сентября 2015 г.",
+              description: "Акция на входные двери Фалько!"
+            },
+            {
+              title:"14 сентября 2015 г.",
+              description: "Установка межкомнатных дверей в подарок при покупке 3-х полотен!"
+            },
+            {
+              title:"14 сентября 2015 г.",
+              description: "Новинка! Термо двери Форт !"
+            },
+            {
+              title:"14 сентября 2015 г.",
+              description: "Установка межкомнатных дверй в подарок при покупке 3-х полотен!"
+            },
+            {
+              title:"14 сентября 2015 г.",
+              description: "Новинка! Термо двери Форт !"
+            },
+          ]
+        }
       })
       //-
         Все иконки были скачаны с ресурса - flaticon.com 

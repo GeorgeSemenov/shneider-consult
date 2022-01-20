@@ -1,0 +1,17 @@
+.side-bar__toArchive {
+  text-align: right;
+  a{
+    cursor: pointer;
+    &::after{
+      content: '';
+      display: block;
+      width: 100%;
+      position: relative;
+      bottom: 1px;
+      border-bottom: 1px solid $transparent;
+    }
+    &:hover::after{
+      border-bottom: 1px solid $side-bar__toArchiveLink--BorderColor;
+    }
+  }
+}

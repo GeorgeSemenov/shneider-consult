@@ -1,2 +1,4 @@
 mixin content-screen__businesses-section-title(modifier)
-  .content-screen__businesses-section-title&attributes(attributes)
+  if modifier["businessesTitle"] == undefined
+    - modifier["businessesTitle"] = "empty__businessesSectionTitle";
+  h3.content-screen__businesses-section-title&attributes(attributes)!=modifier.businessesTitle

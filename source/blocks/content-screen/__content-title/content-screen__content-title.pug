@@ -1,2 +1,4 @@
 mixin content-screen__content-title(modifier)
-  .content-screen__content-title&attributes(attributes)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__content-title";
+  h2.content-screen__content-title&attributes(attributes)!=modifier.title

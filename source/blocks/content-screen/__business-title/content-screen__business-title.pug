@@ -1,2 +1,4 @@
 mixin content-screen__business-title(modifier)
-  .content-screen__business-title&attributes(attributes)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h4.content-screen__business-title&attributes(attributes)!=modifier.title

@@ -1,7 +1,16 @@
+@import '__toArchive/side-bar__toArchive';
 @import '__title/side-bar__title';
 @import '__archive/side-bar__archive';
 @import '__post-description/side-bar__post-description';
 @import '__post-title/side-bar__post-title';
 @import '__post/side-bar__post';
 @import '__posts/side-bar__posts';
-.side-bar {}
+.side-bar {
+  background-color: $side-bar--BGColor;
+  padding-top: 23px;
+  padding-right: 55px;
+  padding-left: 34px;
+  box-sizing: border-box;
+  color: $side-bar--Color;
+  padding-bottom: 30px;
+}

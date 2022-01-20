@@ -1,2 +1,8 @@
 mixin content-screen__businesses(modifier)
-  .content-screen__businesses&attributes(attributes)
+  if modifier["businesses"] == undefined
+    - modifier["businesses"] = [{}];
+  ul.content-screen__businesses&attributes(attributes)
+    each business in modifier.businesses
+      if business["modifier"] == undefined
+        - business["modifier"] = '';
+      +content-screen__business(business)(class=business.modifier)

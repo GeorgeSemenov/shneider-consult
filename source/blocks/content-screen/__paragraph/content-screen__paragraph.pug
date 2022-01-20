@@ -1,0 +1,4 @@
+mixin content-screen__paragraph(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__paragraph";
+  p.content-screen__paragraph&attributes(attributes)!=modifier.text

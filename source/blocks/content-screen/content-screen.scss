@@ -1,3 +1,4 @@
+@import '__paragraph/content-screen__paragraph';
 @import '__side-bar/content-screen__side-bar';
 @import '__businesses-section-title/content-screen__businesses-section-title';
 @import '__business-description/content-screen__business-description';
@@ -8,4 +9,7 @@
 @import '__content-description/content-screen__content-description';
 @import '__content-title/content-screen__content-title';
 @import '__content/content-screen__content';
-.content-screen {}
+@import '../side-bar/side-bar';
+.content-screen {
+  padding-top: 43px;
+}

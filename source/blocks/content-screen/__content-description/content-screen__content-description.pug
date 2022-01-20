@@ -1,2 +1,8 @@
 mixin content-screen__content-description(modifier)
+  if modifier["paragraphs"] == undefined
+    - modifier["paragraphs"] = [{}];
   .content-screen__content-description&attributes(attributes)
+    each paragraph in modifier.paragraphs
+      if paragraph["modifier"] == undefined
+        - paragraph["modifier"] = '';
+      +content-screen__paragraph(paragraph)(class=paragraph.modifier)

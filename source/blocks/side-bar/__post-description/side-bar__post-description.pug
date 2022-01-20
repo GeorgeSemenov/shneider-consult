@@ -1,2 +1,4 @@
 mixin side-bar__post-description(modifier)
-  .side-bar__post-description&attributes(attributes)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__description";
+  p.side-bar__post-description&attributes(attributes)!=modifier.description

@@ -1,2 +1,4 @@
 mixin side-bar__post-title(modifier)
-  .side-bar__post-title&attributes(attributes)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h3.side-bar__post-title&attributes(attributes)!=modifier.title

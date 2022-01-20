@@ -1,2 +1,4 @@
 mixin content-screen__business(modifier)
-  .content-screen__business&attributes(attributes)
+  li.content-screen__business&attributes(attributes)
+    +content-screen__business-title(modifier)
+    +content-screen__business-description(modifier)

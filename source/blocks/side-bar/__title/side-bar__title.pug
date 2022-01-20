@@ -1,2 +1,4 @@
 mixin side-bar__title(modifier)
-  .side-bar__title&attributes(attributes)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h2.side-bar__title&attributes(attributes)!=modifier.title

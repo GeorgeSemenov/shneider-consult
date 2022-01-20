@@ -1,2 +1,4 @@
 mixin content-screen__business-description(modifier)
-  .content-screen__business-description&attributes(attributes)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__businessDescription";
+  p.content-screen__business-description&attributes(attributes)!=modifier.description

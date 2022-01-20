@@ -1,2 +1,8 @@
 mixin side-bar__posts(modifier)
-  .side-bar__posts&attributes(attributes)
+  if modifier["posts"] == undefined
+    - modifier["posts"] = [{}];
+  ul.side-bar__posts&attributes(attributes)
+    each post in modifier.posts
+      if post["modifer"] == undefined
+        - post["modifer"] = "";
+      +side-bar__post(post)(class=post.modifier)
