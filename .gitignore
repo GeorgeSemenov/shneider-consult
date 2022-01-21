@@ -2,7 +2,7 @@ node_modules
 comipush.sh
 commit.sh
 prototype
-build
+
 *.sublime-project
 *.sublime-workspace
 
