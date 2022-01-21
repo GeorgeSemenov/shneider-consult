@@ -1,0 +1,6 @@
+.side-bar__to-archive {
+  text-align: right;
+  a{
+    @include linkBehaviour($side-bar--Color);
+  }
+}

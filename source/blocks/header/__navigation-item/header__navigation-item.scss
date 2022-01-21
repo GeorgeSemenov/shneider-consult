@@ -18,17 +18,6 @@
   }
 
   a{
-    cursor: pointer;
-    &::after{
-      content: '';
-      display: block;
-      width: 100%;
-      position: relative;
-      bottom: 1px;
-      border-bottom: 1px solid $transparent;
-    }
-    &:hover::after{
-      border-bottom: 1px solid $header__navigation-item-link--BorderColor;
-    }
+    @include linkBehaviour($header__navigation-item--color);
   }
 }

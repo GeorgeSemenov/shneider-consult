@@ -7,18 +7,6 @@
     margin-bottom:0px;
   }
   a{
-    cursor: pointer;
-    display: inline-block;
-    &::after{
-      content: '';
-      display: block;
-      width: 100%;
-      position: relative;
-      bottom: 1px;
-      border-bottom: 1px solid $transparent;
-    }
-    &:hover::after{
-      border-bottom: 1px solid $footer__navigation-item-link--BorderColor;
-    }
+    @include linkBehaviour($footer--Color);
   }
 }

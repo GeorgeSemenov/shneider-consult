@@ -3,11 +3,16 @@
   font-size: 30px;
   padding-left: 10px;
   letter-spacing: 1.2px;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   &:last-child{
     margin-bottom:0px;
   }
   @media (max-width: $md - 1px){
     padding-left: 0px;
   }
+
+  a{
+    @include linkBehaviour($header--Color,false);
+  }
+
 }

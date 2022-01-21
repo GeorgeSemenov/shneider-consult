@@ -92,13 +92,32 @@
 
 /* --------------------------------------------- */
 
-@mixin blogpageFrames(){
-  padding-left: 15.5%;
-  padding-right: 15.9%;
-  @media (max-width: $md - 1px){
-      @include px(5%);
+@mixin linkBehaviour($color,$needDark: true){
+  cursor: pointer;
+  display: inline-block;
+  &::after{
+    content: '';
+    display: block;
+    width: 100%;
+    position: relative;
+    bottom: 1px;
+    border-bottom: 1px solid $transparent;
   }
-  @media (max-width: $sm - 1px){
-      @include px(10px);
+  &:hover::after{
+    border-bottom: 1px solid $color;
+  }
+  &:active{
+    @if $needDark {
+      color: darken($color,20%);
+    } @else {
+      color: lighten($color,20%);
+    }
+    &::after{
+      @if $needDark {
+        border-bottom-color: darken($color,20%);
+      } @else {
+        border-bottom-color: lighten($color,20%);
+      }
+    }
   }
 }
